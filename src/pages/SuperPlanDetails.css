@@ -1,0 +1,292 @@
+.sdWrap {
+  margin-top: 100px;
+}
+
+.sdHead {
+  display: flex;
+  gap: 5%;
+}
+
+.sdImg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sdSelectedMedia iframe {
+  height: 398px;
+  width: 250px;
+  border: none;
+}
+.sdSelectedImgWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 400px;
+  overflow: hidden;
+}
+.sdSelectedMedia {
+  max-height: 400px;
+}
+.sdSelectedMedia img {
+  max-height: 398px;
+  max-width: 500px;
+}
+.sdImgRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+}
+
+.sdImgWrapper {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.524);
+  border-radius: 10px;
+}
+.sdImgWrapper img {
+  width: 100%;
+}
+.sdSubImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 2%;
+}
+
+.sdTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sdTarget {
+  color: grey;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.sdBrief {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.sdPrice {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sdMrp {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.sdBuyButton {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1% 0%;
+}
+
+.sdBuyButton a {
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  color: white;
+  border-radius: 9999px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(to top, #4481eb 0%, #04c0fe 100%);
+}
+
+.sdIncludesHead {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.sdIncludedList {
+  padding-left: 5%;
+  list-style: circle;
+  line-height: 1.5;
+}
+
+.sdFoot {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.sdSecWrap {
+  width: 77%;
+}
+
+.sdDesc {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 2% 0%;
+}
+
+.sdServices {
+  margin-top: 1%;
+}
+
+.sdServciseHead {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+
+.sdService {
+  margin-bottom: 1rem;
+}
+
+.sdServiceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.515);
+  border-radius: 999px;
+  padding: 1rem;
+}
+
+.sdServiceName {
+  font-weight: 500;
+  color: white;
+}
+
+.sdServiceArrow {
+  font-size: 1.2rem;
+}
+
+.sdServiceInfo {
+  line-height: 1.5;
+  padding: 3%;
+  border-radius: 1rem;
+  margin-top: 1%;
+  animation: slideDown 0.3s ease-in-out;
+}
+.detailplanInd {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 2% 0%;
+}
+.detailnormInd {
+  width: 20px;
+  height: 20px;
+  color: rgba(147, 147, 147, 0.561);
+}
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+@media (min-width: 769px) {
+  .sdWrap {
+    min-width: 1024px;
+  }
+  .sdImgRow {
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sdHead {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sdImg {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0% 1%;
+  }
+  .sdSelectedImgWrap {
+    padding: 0;
+    align-items: center;
+  }
+  .sdSelectedMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .sdSelectedMedia img {
+    width: 90%;
+  }
+  .sdSelectedMedia iframe {
+    height: 320px;
+    width: 250px;
+    border: none;
+  }
+
+  .sdIncludes {
+    display: none;
+  }
+
+  .sdTarget {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .sdPrice {
+    gap: 2%;
+  }
+
+  .sdBrief {
+    width: 77%;
+    margin-top: 5%;
+  }
+
+  .sdPrice {
+    margin: 5% 0%;
+  }
+  .sdBuyButton {
+    margin: 2% 0%;
+    justify-content: left;
+  }
+  .sdBuyButton a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sdServciseHead {
+    margin-top: 8%;
+    margin-bottom: 4%;
+  }
+  .sdServiceHeader {
+    font-size: 0.8rem;
+  }
+
+  .sdServiceInfo {
+    margin: 4% 0%;
+  }
+}
+@media (max-width: 425px) {
+  .sdBuyButton {
+    justify-content: center;
+  }
+  .sdBuyButton a {
+    width: 100%;
+  }
+}

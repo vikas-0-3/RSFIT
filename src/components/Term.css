@@ -1,0 +1,11 @@
+.termspage {
+    margin-top: 100px;
+    text-align: left !important;
+    padding: 0% 10%;
+}
+
+.fw-bold {
+    font-weight: bolder;
+    font-size: 200%;
+    color: #04befe;
+}

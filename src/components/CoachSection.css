@@ -1,0 +1,141 @@
+.coach-container {
+  padding: 0% 2%;
+}
+
+.coach-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.coach-title {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-top: 3%;
+}
+
+.coach-imgDesc {
+  display: flex;
+}
+.coach-image-container {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.coach-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.coach-details {
+  flex: 1;
+  width: 100%;
+}
+
+.coach-name {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: #31d2e8;
+}
+
+.coach-description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
+  flex: 2;
+  padding-left: 4%;
+  line-height: 1.5;
+}
+.coach-description span {
+  font-weight: 500;
+  color: #31d2e8;
+}
+.coach-learn-Social {
+  display: flex;
+  align-items: center;
+}
+.coach-learn-more {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  flex: 2.2;
+}
+
+.coach-learn-more-btn {
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 999px;
+  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  font-weight: 600;
+}
+
+.coach-social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.coach-social-link {
+  color: #31d2e8;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+@media (max-width: 768px) {
+  .coach-title {
+    font-size: 2rem;
+  }
+  .coach-name {
+    font-size: 1.1rem;
+  }
+  .coach-image-container {
+    flex: 1;
+  }
+  .coach-description {
+    font-size: 0.8rem;
+    flex: 1;
+    display: flex;
+  }
+
+  .coach-learn-more-btn {
+    font-size: 0.6rem;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .coach-inner {
+    padding: 0;
+  }
+  .coach-title {
+    font-size: 1.5rem;
+  }
+  .coach-name {
+    font-size: 0.9rem;
+  }
+
+  .coach-description {
+    font-size: 0.6rem;
+    text-align: left;
+  }
+  .coach-social-icons a {
+    font-size: 1.2rem;
+  }
+  .coach-learn-more-btn {
+    font-size: 0.6rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

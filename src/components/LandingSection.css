@@ -1,0 +1,152 @@
+.landpageWrapper {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.landNavWrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.lsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.lsImg {
+  flex: 1;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: imgMoveUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes imgMoveUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lsImg img {
+  width: 100%;
+  height: auto;
+}
+
+.lsCont {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 5%;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: contSlideIn 1s ease-out forwards;
+}
+
+@keyframes contSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.lsQuote {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 5rem;
+  width: 100%;
+}
+
+.lsQuote p {
+  font-weight: 800;
+}
+
+.lsMission {
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: #31d2e8;
+}
+
+.lsShape {
+  font-family: "Bungee Outline", sans-serif;
+  font-style: normal;
+  color: #04befe;
+  font-size: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .landpageWrapper {
+    margin: 0;
+  }
+  .lsWrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .lsWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .lsImg,
+  .lsCont {
+    min-width: 100%;
+  }
+  .lsQuote {
+    font-size: 2.8rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .lsCont {
+    padding: 0%;
+  }
+
+  .lsMission {
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 3%;
+  }
+
+  .lsShape {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .lsQuote {
+    font-size: 2.1rem;
+  }
+  .lsShape {
+    font-size: 2.5rem;
+  }
+
+  .lsMission {
+    font-size: 0.9rem;
+  }
+}
